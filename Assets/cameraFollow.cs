@@ -10,6 +10,12 @@ public class cameraFollow : MonoBehaviour
     // Start is called before the first frame update
     private void FixedUpdate()
     {
+        if (!target)   //MissingReferenceException: The object of type 'Transform' has been destroyed but you are still trying to access it.
+        {                   //Your script should either check if it is null or you should not destroy the object.
+            return;
+            //GameOver();
+        }
+
         Follow();
     }
     public void Follow()
@@ -18,5 +24,10 @@ public class cameraFollow : MonoBehaviour
         Vector3 smoothPosition = Vector3.Lerp(transform.position, targetPosition, smoothFactor * Time.fixedDeltaTime);
         transform.position = targetPosition;
     }
+
+    /*void GameOver()
+    {
+
+    }*/
 
 }
