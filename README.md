@@ -1,7 +1,7 @@
 # Balloon_game
  My project.
  #
-This is a ball game where the ball always moves forward. There are traps and air pressure that aim to stop the ball. Air pressure can change the direction of the ball, and traps will destroy the ball
+This is a balloon game where the ball always moves forward. There are traps and air pressure that aim to stop the ball. Air pressure can change the direction of the ball, and traps will destroy the ball
 
 Game preview:
  
